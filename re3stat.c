@@ -18,8 +18,8 @@ struct rerere_dir {
 void save_rr_stats(const char *path, struct rerere_id *id)
 {
 	printf("===== RE3-STAT =====\n");
-	// printf("Current variant id: %s\n", id->collection->name);
-	// printf("Is working on path: %s\n", path);
+	printf("Current variant id: %s\n", id->collection->name);
+	printf("Is working on path: %s\n", path);
 
 	write_history(id, "MERGE_HEAD", "merge_heads");
 	write_history(id, "ORIG_HEAD", "orig_heads");
